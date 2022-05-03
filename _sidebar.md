@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* [Arcology Technical Whitepaper](./) 
+* [**Arcology Technical Whitepaper**](./) 
   
   * [Introduction](./introduction.md)
   * [Existing Design Flaws](./design-flaws.md)

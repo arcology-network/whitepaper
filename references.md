@@ -1,9 +1,4 @@
----
-id: references
-title: References
----
-
-## 14	References
+## 14.	References
 [1] T. Bergan et al. CoreDet: A compiler and runtime system for deterministic multithreaded execution. In15th ASP-LOS, Mar. 2010
 
 [2] E. D. Berger et al. Grace: Safe multithreaded programming for C/C++. InOOPSLA, Oct. 2009.
