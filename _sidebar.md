@@ -1,8 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-
-* [HOME](./)
-
 * [Introduction](./introduction.md)
 * [Existing Design Flaws](./design-flaws.md)
 * [Solution Overview](./solution-overview.md.md)
