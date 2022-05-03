@@ -1,8 +1,3 @@
-- [1. Introduction](#1-introduction)
-- [1.1. Attempted Solutions](#11-attempted-solutions)
-- [1.2. What is Arcology?](#12-what-is-arcology)
-- [1.3. Key Features](#13-key-features)
-- [1.4. Applications](#14-applications)
 ## 1. Introduction
 
 Recent years have seen enormous interest in blockchain technology and its potential to upend countless industries, from fintech to real estate, from gaming to social networking. For better or worse, the rise of cryptocurrencies fueled much of this interest — and made “blockchain” a household name.
