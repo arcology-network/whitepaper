@@ -7,7 +7,7 @@
   * [Solution Overview](./solution-overview.md.md)
   * [Arcology Architecture](./arcology-architecture.md)
   * [Network Communication](./network-communication.md)
-  * [Consensus](./Consensus.md)
+  * [Consensus](./consensus.md)
   * [Smart Contract](./smart-contract.md)
   * [Data Storage](./data-storage.md)
   * [Parallel Merkle Tree](./parallel-merkle-tree.md)
