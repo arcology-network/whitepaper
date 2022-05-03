@@ -4,11 +4,16 @@
 * [HOME](./)
 
 * [Introduction](./introduction.md)
-  * [Tomcat](./introduction)
-  * [Cloud](./tutorials/cloud/index)
-  * [Java](./tutorials/java/index)
-
-* [About](./about/index)
-
-* [Contact](./contact/index)
-
+* [Existing Design Flaws](./design-flaws.md)
+* [Solution Overview](./solution-overview.md.md)
+* [Arcology Architecture](./arcology-architecture.md)
+* [Network Communication](./network-communication.md)
+* [Consensus](./Consensus.md)
+* [Smart Contract](./smart-contract.md)
+* [Data Storage](./data-storage.md)
+* [Parallel Merkle Tree](./parallel-merkle-tree.md)
+* [Microservice Architecture](./microservice-architecture.md)
+* [Network Partitioning](./network-partitioning.md)
+* [Conclusion](./conclusion.md)
+* [Reference](./Reference.md)
+* [Legal Disclaimer](./legal_disclaimer.md)
