@@ -13,4 +13,4 @@
 * [Network Partitioning](./network-partitioning.md)
 * [Conclusion](./conclusion.md)
 * [Reference](./Reference.md)
-* [Legal Disclaimer](./legal_disclaimer.md)
+* [Legal Disclaimer](./legal-disclaimer.md)
