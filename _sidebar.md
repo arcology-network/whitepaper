@@ -3,8 +3,8 @@
 
 * [HOME](./)
 
-* [Tutorials](./tutorials/index)
-  * [Tomcat](./tutorials/tomcat/index)
+* [Tutorials](./introduction)
+  * [Tomcat](./introduction)
   * [Cloud](./tutorials/cloud/index)
   * [Java](./tutorials/java/index)
 
