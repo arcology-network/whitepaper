@@ -1,9 +1,4 @@
----
-id: smart-contract
-title: Smart Contract
----
-
-## 7 Smart Contract
+## 7. Smart Contract
 
 Put simply, a smart contract allows complex business logic to be executed within virtual machines. There are different kinds of VMs in the blockchain world; they’re designed with different focuses and priorities. Some may put more emphasis on transparency, for example, while others prioritize confidentiality or security.
 

@@ -1,9 +1,4 @@
----
-id: concurrency-control
-title: Concurrency Control
----
-
-## 10 Concurrency Control
+## 10. Concurrency Control
 
 Among the factors hindering blockchain’s scalability, low-efficiency transactions are among the most pressing. In other systems, transactions — including smart contract calls — are usually placed and executed in serial order by the systems.
 
@@ -21,13 +16,13 @@ Another challenge is reproducibility — a key requirement in distributed networ
 
 Unfortunately, the concurrency frameworks designed for centralized systems usually don’t enforce determinism; transplanting a conventional concurrency solution directly from a centralized system into blockchain is unlikely to be successful.
 
-## 10.1	Arcology’s Concurrency Solution
+## 10.1. Arcology’s Concurrency Solution
 
 Arcology offers a very powerful, VM-neutral and easy-to-use deterministic concurrency mechanism that helps developers design and implement concurrent logics in their smart contracts. With Arcology’s concurrent framework, developers can fully utilize the computational power provided by modern multi-thread, multi-core, multi-processor architectures without sacrificing safety.
 
 Transactions can be distributed to multiple cores and multiple processors for parallel processing, making full use of computational power through horizontal scaling.
 
-## 10.2	Benefits
+## 10.2. Benefits
 
 The most obvious benefits of introducing a deterministic concurrency mechanism to blockchain smart contract development is performance. Smart contract executions could be distributed to multiple threads (VMs), multiple cores or even multiple machines. Together with Arcology’s microservice-based architecture, improving the overall throughput is simple as adding more machines to the server cluster.
 
@@ -35,7 +30,7 @@ Arcology’s concurrency control mechanism isn’t just concurrent, but also det
 
 What’s more, Arcology’s concurrency control mechanism works on multiple nodes. It has the ability to connect network-wide computational resources together, turning our network into a supercomputer-like, network-wide computation platform.
 
-## 10.3 Determinism
+## 10.3. Determinism
 
 On a blockchain network, one block is usually proposed by a selected block producer, making other validators responsible for verifying transactions by re-executing them and confirming the same results. Only then will validators confirm the status of the block.
 
@@ -43,7 +38,7 @@ However, as mentioned above, shared states may be updated by different threads i
 
 Arcology’s design employs a deterministic concurrency management system to guarantee that shared states are accessed and updated in a deterministic way. Developers can fully utilize the computational power of multiple-processor architectures without sacrificing state consistency.
 
-## 10.4 Design Considerations
+## 10.4. Design Considerations
 
 When it comes to concurrency control mechanism, there are broadly two major strategies: prevention and recovery. The former prevents problems from happening, while the latter tries to recover inconsistent states when they do happen. They are referred to as “optimistic” and “pessimistic” concurrency control.
 
@@ -61,7 +56,7 @@ The framework covers a broad area of issues in concurrent programing and determi
 
 At its core, this framework is a standalone module. It is not a part of any particular smart contract programming language or virtual machine. It is VM- and language-neutral, and it can be deployed as an independent network service with just some language-specific adaptation needed.
 
-## 10.5 Arcology Concurrency Framework
+## 10.5. Arcology Concurrency Framework
 
 Arcology is capable of supporting parallel transaction processing on a cluster of a few thousand machines, and our concurrency framework provides a high-level deterministic concurrency mechanism that’s generic enough to cover all key aspects of coordinating shared state accesses.
 
@@ -78,7 +73,7 @@ The concurrency framework is designed to work in heterogeneous environment and h
 -	**Flexibility:** Arcology has a collection of synchronization primitives such as locks, atomic function, deferred functions and lockless concurrent containers for developers to choose from, based on use cases.
 - **Performance:** Fully utilize computational power to execute smart contracts in full parallel mode with minimum overhead.
 
-## 10.6	Synchronization Primitives
+## 10.6. Synchronization Primitives
 
 Synchronization primitives help protect shared states. Proper use of these primitives ensures that, at any given moment, just one thread has the chance to modify the lock-protected shared resources. This prevents them from being modified by multiple threads in concurrent execution environments. Among all primitives, locking is the most common: a thread must set a lock to a shared variable before making any changes, and the lock is released only for the second thread. This process inevitably introduces network overhead.
 
@@ -88,7 +83,7 @@ Smart contracts can run on different VMs within the same machine or even VMs hos
 
 We also provide a consistent interface that developers can use without worrying about the underlying inter-VM communications and synchronization. Arcology takes care of all these details behind the scenes.
 
-## 10.7 Distributed Virtual Concurrent Memory (DVCM)
+## 10.7. Distributed Virtual Concurrent Memory (DVCM)
 
 Distributed virtual concurrent memory (DVCM) is a key part of Arcology concurrency framework for managing shared states generated from concurrent smart contract executions, detecting potential state conflicts and recovering state consistency, if needed.
 
@@ -98,25 +93,25 @@ The entire process is transparent to developers.
 
 DVCM doesn’t exclude the use of locks. Rather, it minimizes the need for locks whenever possible. DVCM and locking can work perfectly together to achieve outstanding performance.
 
-### 10.7.1 Concurrent Containers
+### 10.7.1. Concurrent Containers
 For developers to fully utilize the concurrency mechanism, Arcology provides a collection of thread-safe containers that allow concurrent updates from multiple smart contract instances running in different VMs. Concurrent containers can be used in both lock or lock-free way.
 Declared containers have their own unique identifiers. All variables are globally visible and accessible under the same DVCM manager. Currently, Arcology provides two different types of concurrent containers: Concurrent Array and Concurrent Hashmap.
 
-### 10.7.2 Concurrency Manager
+### 10.7.2. Concurrency Manager
 
 Concurrency manager keeps a list of all concurrent arrays created by the smart contracts. The concurrent array manager connects to the DVCM through a concurrent library. Once a concurrent container is registered, all subsequent manipulation to the array is versioned and recorded.
 
-### 10.7.3 Concurrent Array
+### 10.7.3. Concurrent Array
 
 Concurrent array is a fixed-length, sequence container. As with a conventional array, elements are accessed by their indices and can be manipulated in a thread-safe way. This means that multiple threads running in different VMs can read and write concurrent arrays simultaneously without causing state inconsistencies.
 
 The interface to access concurrent containers is provided through a set of carefully designed system level smart contract calls deployed at reserved addresses. Every smart contract has its own dedicated virtual memory for concurrent variable and containers. When the array manager receives a request, queries the register if a container has been created or not. If it doesn’t exist, the manager creates a new one.
 
-### 10.7.4 Concurrent Hashmap
+### 10.7.4. Concurrent Hashmap
 
 Hashmap keeps a collection of key-value pairs. It is a concurrency-safe container for a number of elements, and it supports simultaneous operations such as concurrent append, and update and delete by multiple threads running in different VM containers.
 
-### 10.7.5 Deferred Functions
+### 10.7.5. Deferred Functions
 
 Deferred functions are invoked when call functions are returned. They are system-provided lockless mechanisms offering highly efficient alternatives to lock-protected access. Using deferred calls is a convenient way to handle post-processing after concurrent smart contract executions are completed.
 

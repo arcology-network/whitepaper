@@ -1,7 +1,4 @@
----
-id: legal-disclaimer
-title: Legal Disclaimer
----
+# Legal Disclaimer
 
 ## Terms of Use
 

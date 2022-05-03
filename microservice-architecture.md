@@ -1,9 +1,4 @@
----
-id: microservice-architecture
-title: Micoservice Architecture
----
-
-## 11	Microservice Architecture
+## 11. Microservice Architecture
 
 Arcology is a high-performance and general-purpose system that naturally demands a flexible, scalable and loosely coupled system architecture. In Arcology, functional modules can be horizontally scaled and integrated into the existing framework in order to fully harness the computational power that clusters offer.
 
