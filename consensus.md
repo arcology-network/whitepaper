@@ -1,5 +1,24 @@
 ## 6. Consensus
-
+- [6. Consensus](#6-consensus)
+- [6.1. Various Mechanisms](#61-various-mechanisms)
+  - [6.1.1. PoW](#611-pow)
+  - [6.1.2. PoS](#612-pos)
+  - [6.1.3. Others](#613-others)
+- [6.2.	Multifactoring](#62multifactoring)
+- [6.3.	Advantages](#63advantages)
+  - [6.3.1. Flexibility](#631-flexibility)
+  - [6.3.2. Scalability](#632-scalability)
+  - [6.3.3. Fairness and Decentralization](#633-fairness-and-decentralization)
+  - [6.3.4. Validator Selection](#634-validator-selection)
+  - [6.3.5. Activity-based](#635-activity-based)
+  - [6.3.6. Anti-cartel](#636-anti-cartel)
+  - [6.3.7. Validator shuffling and auto recovery](#637-validator-shuffling-and-auto-recovery)
+- [6.4. The Process](#64-the-process)
+- [6.5. Engine](#65-engine)
+- [6.6. Metadata](#66-metadata)
+  - [6.6.1. Validator set](#661-validator-set)
+  - [6.6.2. Validator selection](#662-validator-selection)
+- [6.7. Validator Quantification](#67-validator-quantification)
 The Scalability - Security - Decentralization Trilemma dictates that networks can take their choice of two at any given time. Achieving all three simultaneously has been a practical impossibility. This has plagued the blockchain industry since its inception.
 
 ## 6.1. Various Mechanisms
