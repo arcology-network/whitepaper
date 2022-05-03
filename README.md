@@ -1,4 +1,4 @@
-# Welcome to Arcology Technical Whitepaper Page
+# Welcome to Arcology Technical Whitepaper
 
 For information regrading Arcology network please visit [the webiste](https://arcology.network).
 
