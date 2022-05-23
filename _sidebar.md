@@ -20,8 +20,6 @@
     * [2.4.3. Hash Root Calculation](./design-flaws.md#243-hash-root-calculation)
     * [2.5. VM Compatibility](./design-flaws.md#25-vm-compatibility)
 
-  * [Solution Overview](./solution-overview.md.md)
-
 * [3. Solution Overview](./solution-overview.md.md#3-solution-overview)
   * [3.1.1. Cluster Computing](./solution-overview.md.md#311-cluster-computing)
   * [3.1.2. Deterministic Concurrency](./solution-overview.md.md#312-deterministic-concurrency)
